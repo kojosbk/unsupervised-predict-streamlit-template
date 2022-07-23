@@ -283,13 +283,39 @@ def main():
 
         if choose == "Directors":
         #if option_selection == "Directors":
-            st.info("We start off with directors, A film director controls a film's artistic and dramatic aspects and visualizes the screenplay (or script) while guiding the technical crew and actors in the fulfilment of that vision. The director has a key role in choosing the cast members, production design and all the creative aspects of filmmaking\n\n\n\nEven though most people don't into finding our who director what movie to decide whether its going to be a good watch or not, there is a proportion of people that either watch the credits at the end of the movie or do research of each movie before they watch it, for these people director of a movie plays an import role in decided whether or not to watch a movie, for me personally I watch mroe series's than movies and but I know that if a series is directed by Chuck Lorre than I will definately love it.\n\nlet's start by finding our which directors have recieved the most number of ratings for their collective movies")
+            #st.info("We start off with directors, A film director controls a film's artistic and dramatic aspects and visualizes the screenplay (or script) while guiding the technical crew and actors in the fulfilment of that vision. The director has a key role in choosing the cast members, production design and all the creative aspects of filmmaking\n\n\n\nEven though most people don't into finding our who director what movie to decide whether its going to be a good watch or not, there is a proportion of people that either watch the credits at the end of the movie or do research of each movie before they watch it, for these people director of a movie plays an import role in decided whether or not to watch a movie, for me personally I watch mroe series's than movies and but I know that if a series is directed by Chuck Lorre than I will definately love it.\n\nlet's start by finding our which directors have recieved the most number of ratings for their collective movies")
             
             op_director = st.radio("Choose an option under directors",("Top 3 most rated directors","Top 3 directors with most number of movies","10 highest rated director with over 10000 ratings","10 worst rated directors with over 10000 ratings"))
 
             if op_director == "Top 3 most rated directors":
-                st.image('resources/imgs/top_25_most_D1.png',use_column_width=True)
-                st.write("Topping the chart bar far we see Quentin Tarantino who has directed a total of 10 movies is an American film director, screenwriter, producer, and actor. His films are characterized by nonlinear storylines, aestheticization of violence, extended scenes of dialogue, ensemble casts, references to popular culture and a wide variety of other films, soundtracks primarily containing songs and score pieces from the 1960s to the 1980s, alternate history, and features of neo-noir film, One of Quentin Tarantino's highest rated movie Pulp fiction appreard in the top 10 best rated movies we saw ealier.\n\nwe also see familiar names like Stephen King who is also an author of horror, supernatural fiction, suspense, crime, science-fiction, and fantasy novels and directed a total of 23 movies among these movies is the movie we ponded a question of whether we can consider it as the best movie of all time, since it appeared top of the chart on both the Top 25 most rated movies of all time and Top 10 best rated movies of all time, Shawshank Redemption was based on Stephen King's novel.\n\n\n\nAfter seein the total number of ratings for each director its only natural that one wonders how many movies did each of these directors release, as this would contribute to the total number of ratings they have recieved, so lets find out which directors have released the most number of movies.")
+                st.image('resources/imgs/Mean Rating Per.png',use_column_width=True)
+                dis = '''### Top 3 Directors with High ratings
+
+<img height = "238" width = 178 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ie6FvZbpJx2VbSMzbGsFagq2wPgnNXJxSPQVTI6ofqhWv28AZKCUZIt54kEQHr9gfiI&usqp=CAU" alt="Photo of Stephen King" class="GeneratedImage"> <img height = "238" width = 950 src="resources\imgs\king.jpg" alt="Movies of sk" class="GeneratedImage"></br>
+<a href="https://en.wikipedia.org/wiki/Stephen_King">Stephen King</a>  The Shawshank Redemption, which debuted at the top of both lists of the Top 25 Most Rated Movies of All Time and the Top 10 Best Rated Movies of All Time, was adapted from a novel by Stephen King, who is also an author of horror, supernatural fiction, suspense, crime, and fantasy novels. Stephen King has directed a total of 23 movies.</a>
+</br>
+</br>
+<img height = "238" width = 178 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxlTrJvdxqSMBYf90USQe0qXEaMhXdy35FJOpUlEZ5PGl4wIBI" alt="Photo of Quentin Tarantino" class="GeneratedImage">  <img height = "238" width = 950 src="resources\imgs\quent.JPG" alt="Movies of Tom Hanks" class="GeneratedImage"></br>
+</br>
+<a href="https://en.wikipedia.org/wiki/Quentin_Tarantino"> Quentin Tarantino</a> an American film director, screenwriter, producer, and actor, now sits atop the ranking. His movies include nonlinear plots, aestheticized violence, lengthy discussion sequences, ensemble casts, allusions to pop culture and a wide range of other movies, soundtracks mostly made up of songs and score pieces from the 1960s to the 1980s, alternate histories, and elements of neo-noir film. One of Quentin Tarantino's films with the highest ratings In the top 10 best-rated movies we previously viewed, pulp fiction was prevalent.</a>
+</br>
+</br>
+
+<img height = "238" width = 178 src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFu6ohQVsNtOaLKFv6Qv3Xbp2GCIx54HXeTKy0qnVOiZEp4IFT" alt="Photo of John Sayles" class="GeneratedImage">  <img height = "238" width = 950 src="resources\imgs\jon.png" alt="Movies of Tom Hanks" class="GeneratedImage"></br>
+<a href="https://en.wikipedia.org/wiki/Stephen_King">John Sayles</a>   is an American independent film director, screenwriter, editor, actor, and novelist. He has twice been nominated for the Academy Award for Best Original Screenplay, for Passion Fish and Lone Star. His film Men with Guns was nominated for the Golden Globe for Best Foreign Language Film.</a>
+</br>
+</br>
+
+### Key observatios
+* From the list above, we can see certain directors who are immediately recognized. Stephen King and Quentin Tarantino are, predictably, at the top of the list.
+* It comes as no surprise that the director of the film with the highest rating, Shawshank Redemption, is ranked first.
+* The fact that the top 3 directors have an average mean rating of 4.0 further demonstrates how positively moviegoers rank their favorite films.
+---
+After seeing the total number of ratings each filmmaker has received, it is only logical to question how many films each of these directors has produced. Since this would affect the overall number of ratings they have received, let's find out which directors have produced the most films.
+
+---
+                '''  
+                st.markdown(dis, unsafe_allow_html=True)
             if op_director == "Top 3 directors with most number of movies":
 
                 direct = '''### Top 3 Directors with most movies released
@@ -299,13 +325,13 @@ def main():
 <a href="https://en.wikipedia.org/wiki/Luc_Besson">Luc Paul Maurice Besson</a>  is a French filmmaker, writer, and producer of movies. The Big Blue, La Femme Nikita, and Subway were all movies he either directed or produced. </a>
 </br>
 </br>
-<img height = "238" width = 178 src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXYKDvhxIVt8R_yV3LLLZJ2LemcV860GqEgu9TKCDvGSDnHksM" alt="Photo of woody allen" class="GeneratedImage"> <img height = "238" width = 950 src="img\woody.JPG" alt="Movies of Tom Hanks" class="GeneratedImage">
+<img height = "238" width = 178 src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXYKDvhxIVt8R_yV3LLLZJ2LemcV860GqEgu9TKCDvGSDnHksM" alt="Photo of woody allen" class="GeneratedImage"> <img height = "238" width = 950 src="resources\imgs\woody.JPG" alt="Movies of Tom Hanks" class="GeneratedImage">
 </br>
 <a href="https://en.wikipedia.org/wiki/Woody_Allen"> Woody Allen</a> is an American filmmaker, writer, actor, and comedian whose career spans more than six decades including several films that have won Academy Awards. </a>
 </br>
 </br>
 
-<img height = "238" width = 178 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ie6FvZbpJx2VbSMzbGsFagq2wPgnNXJxSPQVTI6ofqhWv28AZKCUZIt54kEQHr9gfiI&usqp=CAU" alt="Photo of Stephen King" class="GeneratedImage"> <img height = "238" width = 950 src="img\king.JPG" alt="Movies of Tom Hanks" class="GeneratedImage"></br>
+<img height = "238" width = 178 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ie6FvZbpJx2VbSMzbGsFagq2wPgnNXJxSPQVTI6ofqhWv28AZKCUZIt54kEQHr9gfiI&usqp=CAU" alt="Photo of Stephen King" class="GeneratedImage"> <img height = "238" width = 950 src="resources\imgs\king.JPG" alt="Movies of Tom Hanks" class="GeneratedImage"></br>
 <a href="https://en.wikipedia.org/wiki/Stephen_King">Stephen King</a>  is an American writer of books in the genres of horror, science fiction, fantasy, suspense, and paranormal fiction. </a>
 </br>
 </br>
