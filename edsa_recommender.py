@@ -285,23 +285,23 @@ def main():
         #if option_selection == "Directors":
             #st.info("We start off with directors, A film director controls a film's artistic and dramatic aspects and visualizes the screenplay (or script) while guiding the technical crew and actors in the fulfilment of that vision. The director has a key role in choosing the cast members, production design and all the creative aspects of filmmaking\n\n\n\nEven though most people don't into finding our who director what movie to decide whether its going to be a good watch or not, there is a proportion of people that either watch the credits at the end of the movie or do research of each movie before they watch it, for these people director of a movie plays an import role in decided whether or not to watch a movie, for me personally I watch mroe series's than movies and but I know that if a series is directed by Chuck Lorre than I will definately love it.\n\nlet's start by finding our which directors have recieved the most number of ratings for their collective movies")
             
-            op_director = st.radio("Choose an option under directors",("Top 3 most rated directors","Top 3 directors with most number of movies","10 highest rated director with over 10000 ratings","10 worst rated directors with over 10000 ratings"))
+            op_director = st.radio("Choose an option under directors",("Top 3 most rated directors","Top 3 directors with most number of movies","3 worst rated directors"))
 
             if op_director == "Top 3 most rated directors":
                 st.image('resources/imgs/Mean Rating Per.png',use_column_width=True)
                 dis = '''### Top 3 Directors with High ratings
 
-<img height = "238" width = 178 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ie6FvZbpJx2VbSMzbGsFagq2wPgnNXJxSPQVTI6ofqhWv28AZKCUZIt54kEQHr9gfiI&usqp=CAU" alt="Photo of Stephen King" class="GeneratedImage"> <img height = "238" width = 950 src="resources\imgs\king.jpg" alt="Movies of sk" class="GeneratedImage"></br>
+<img height = "238" width = 178 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ie6FvZbpJx2VbSMzbGsFagq2wPgnNXJxSPQVTI6ofqhWv28AZKCUZIt54kEQHr9gfiI&usqp=CAU" alt="Photo of Stephen King" class="GeneratedImage"> <img height = "238" width = 950 src="https://i.ibb.co/GFtp5H9/king.jpg" alt="Movies of sk" class="GeneratedImage"></br>
 <a href="https://en.wikipedia.org/wiki/Stephen_King">Stephen King</a>  The Shawshank Redemption, which debuted at the top of both lists of the Top 25 Most Rated Movies of All Time and the Top 10 Best Rated Movies of All Time, was adapted from a novel by Stephen King, who is also an author of horror, supernatural fiction, suspense, crime, and fantasy novels. Stephen King has directed a total of 23 movies.</a>
 </br>
 </br>
-<img height = "238" width = 178 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxlTrJvdxqSMBYf90USQe0qXEaMhXdy35FJOpUlEZ5PGl4wIBI" alt="Photo of Quentin Tarantino" class="GeneratedImage">  <img height = "238" width = 950 src="resources\imgs\quent.JPG" alt="Movies of Tom Hanks" class="GeneratedImage"></br>
+<img height = "238" width = 178 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxlTrJvdxqSMBYf90USQe0qXEaMhXdy35FJOpUlEZ5PGl4wIBI" alt="Photo of Quentin Tarantino" class="GeneratedImage">  <img height = "238" width = 950 src="https://i.ibb.co/QNKJg49/quent.jpg" alt="Movies of QT" class="GeneratedImage"></br>
 </br>
 <a href="https://en.wikipedia.org/wiki/Quentin_Tarantino"> Quentin Tarantino</a> an American film director, screenwriter, producer, and actor, now sits atop the ranking. His movies include nonlinear plots, aestheticized violence, lengthy discussion sequences, ensemble casts, allusions to pop culture and a wide range of other movies, soundtracks mostly made up of songs and score pieces from the 1960s to the 1980s, alternate histories, and elements of neo-noir film. One of Quentin Tarantino's films with the highest ratings In the top 10 best-rated movies we previously viewed, pulp fiction was prevalent.</a>
 </br>
 </br>
 
-<img height = "238" width = 178 src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFu6ohQVsNtOaLKFv6Qv3Xbp2GCIx54HXeTKy0qnVOiZEp4IFT" alt="Photo of John Sayles" class="GeneratedImage">  <img height = "238" width = 950 src="resources\imgs\jon.png" alt="Movies of Tom Hanks" class="GeneratedImage"></br>
+<img height = "238" width = 178 src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSFu6ohQVsNtOaLKFv6Qv3Xbp2GCIx54HXeTKy0qnVOiZEp4IFT" alt="Photo of John Sayles" class="GeneratedImage">  <img height = "238" width = 950 src="https://i.ibb.co/d4rc8Hg/jon.png" class="GeneratedImage"></br>
 <a href="https://en.wikipedia.org/wiki/Stephen_King">John Sayles</a>   is an American independent film director, screenwriter, editor, actor, and novelist. He has twice been nominated for the Academy Award for Best Original Screenplay, for Passion Fish and Lone Star. His film Men with Guns was nominated for the Golden Globe for Best Foreign Language Film.</a>
 </br>
 </br>
@@ -325,13 +325,13 @@ After seeing the total number of ratings each filmmaker has received, it is only
 <a href="https://en.wikipedia.org/wiki/Luc_Besson">Luc Paul Maurice Besson</a>  is a French filmmaker, writer, and producer of movies. The Big Blue, La Femme Nikita, and Subway were all movies he either directed or produced. </a>
 </br>
 </br>
-<img height = "238" width = 178 src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXYKDvhxIVt8R_yV3LLLZJ2LemcV860GqEgu9TKCDvGSDnHksM" alt="Photo of woody allen" class="GeneratedImage"> <img height = "238" width = 950 src="resources\imgs\woody.JPG" alt="Movies of Tom Hanks" class="GeneratedImage">
+<img height = "238" width = 178 src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQXYKDvhxIVt8R_yV3LLLZJ2LemcV860GqEgu9TKCDvGSDnHksM" alt="Photo of woody allen" class="GeneratedImage"> <img height = "238" width = 950 src="https://i.ibb.co/88Nhr6p/woody.jpg" alt="Movies of Tom Hanks" class="GeneratedImage">
 </br>
 <a href="https://en.wikipedia.org/wiki/Woody_Allen"> Woody Allen</a> is an American filmmaker, writer, actor, and comedian whose career spans more than six decades including several films that have won Academy Awards. </a>
 </br>
 </br>
 
-<img height = "238" width = 178 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ie6FvZbpJx2VbSMzbGsFagq2wPgnNXJxSPQVTI6ofqhWv28AZKCUZIt54kEQHr9gfiI&usqp=CAU" alt="Photo of Stephen King" class="GeneratedImage"> <img height = "238" width = 950 src="resources\imgs\king.JPG" alt="Movies of Tom Hanks" class="GeneratedImage"></br>
+<img height = "238" width = 178 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3ie6FvZbpJx2VbSMzbGsFagq2wPgnNXJxSPQVTI6ofqhWv28AZKCUZIt54kEQHr9gfiI&usqp=CAU" alt="Photo of Stephen King" class="GeneratedImage"> <img height = "238" width = 950 src="https://i.ibb.co/GFtp5H9/king.jpg" alt="Movies of Tom Hanks" class="GeneratedImage"></br>
 <a href="https://en.wikipedia.org/wiki/Stephen_King">Stephen King</a>  is an American writer of books in the genres of horror, science fiction, fantasy, suspense, and paranormal fiction. </a>
 </br>
 </br>
@@ -343,36 +343,75 @@ After seeing the total number of ratings each filmmaker has received, it is only
                 st.markdown(direct, unsafe_allow_html=True)
                 st.image('resources/imgs/Number of Movies Per director.png',use_column_width=True)
                 st.write("Luc Besson and Woody Allen share the top rank with an equal amount of 26 films apiece. Stephen King is next. Having a total of 23 films, this time at number 2. We also notice some well-known names, including William Shakespeare, an English playwright, poet, and actor who is renowned as the greatest dramatist and writer in the English language. Additionally, Tyler Perry, a well-known producer, director, actor, screenwriter, dramatist, novelist, composer, businessman, and philanthropist, is most known for his Madea film series, which he not only directs but also stars in three roles.\n\n\n\nMost of the movies that were produced by the directors in the above bar plot have the genres Drama and Romance or a mixture of those two gernes popularly known as romantic comedies. Whether or not these two genres are the most succesful generes of highest rated genres is still to be investigated.")
-            if op_director == "10 highest and worst rated director with over 10000 ratings":
+            if op_director == "3 worst rated directors":
             #if director_option == "10 highest and worst rated director with over 10000 ratings":
-                st.image('resources/imgs/10_highest_rated_D3.png',use_column_width=True)
-                st.image('resources/imgs/10_worst_directors_D4.png',use_column_width=True)
-                st.write("Toping the chart of the best rated directors is Chuck Palahniuk, the director of Fight Club that recieved an average rating of 4.22 which had Action, Crime, Drama and thriller genres. The second spot is held by Christopher McQuarrie recieving an average rating of 4.19 for three movies he has directed namely Usual suspects, Way of the gun and Edge of Tomorrow with mix of genres Action, Crime and Thriller, this this shares some light on the question we posed earlier of whether people the most succesful genres were a mix of Drama, Romance or Comedy, as we see that our two best rated directors create blockbusters with mix of genres action and thriller. We will investigated these genres thoroughly at a later stage.\n\n\Looking at the worst rated directed we see that the lowest rated director is Jack Bernstein with an average rating of 2.84\n\n\n\nWe now move to the next factor that influences the perfrance of of viewers that is the genre of the movie.\n\n")
-        
+                st.image('resources/imgs/worst.png',use_column_width=True)
+                wor = '''
+                ### Top 3 Directors with the lowest ratings
+
+<img height = "125" width = 125 src="https://www.thepitchkc.com/content/uploads/2021/11/g/r/charles-band-scaled-e1637002282929.jpg" alt="Photo of Charles Band" class="GeneratedImage"></br>
+<a href="https://en.wikipedia.org/wiki/Charles_Band">Charles Band</a> is an American film producer and director, known for his work on horror comedy movies. </a>
+</br>
+</br>
+<img height = "125" width = 125 src="https://upload.wikimedia.org/wikipedia/en/e/e3/John_Hughes_Home_Alone_2.jpg" alt="Photo of John Hughes" class="GeneratedImage"> 
+</br>
+<a href="https://en.wikipedia.org/wiki/John_Hughes_(filmmaker)"> John Hughes</a> was an American filmmaker. Hughes began his career in 1970 as an author of humorous essays and stories for the National Lampoon magazine. </a>
+</br>
+</br>
+
+<img height = "125" width = 125 src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQq8v6TWEuFEzwzeUmeVXsHWsR2nTst1wxrbHrSS77qnJMYtqog" alt="Photo of Clive Barker" class="GeneratedImage"></br>
+<a href="https://en.wikipedia.org/wiki/Clive_Barker">Clive Barker</a>   is an English playwright, author, film director and visual artist who came to prominence in the mid-1980s with a series of short stories, the Books of Blood, which established him as a leading horror writer. He has since written many novels and other works. </a>
+</br>
+</br>
+
+### Key observatios
+* From the list above, we can notice a few filmmakers that stand out right away. Puppet Master was created by Charles band, which gets very poor reviews.
+
+* The least popular directors have an average mean rating of 2.5, which further exemplifies how poorly viewers evaluate their movies.
+---
+
+'''
+                st.markdown(wor, unsafe_allow_html=True)
+                        
         
         if choose == "Genres":
-        #if option_selection == "Genres":
-            op_genre = st.radio("Choose an option under Genres",("Treemap of movie genres","Genre average rating over the years","Word cloud of movie genres"))
-            #options_genres = ["Treemap of movie genres","Genre average rating over the years","Word cloud of movie genres"]
-            #genre_options = st.selectbox('Choose option', options_genres)
-            if op_genre == "Treemap of movie genres":
+        
+            op_genre = st.radio("Choose an option under Genres",("Mean Rating of movies Per Genre","Genre average rating over the years"))
+            
+            if op_genre == "Mean Rating of movies Per Genre":
             #if genre_options == "Treemap of movie genres":
-                st.image('resources/imgs/Treemap_G1.png',use_column_width=True)
-                st.write("The genre treemap shows that Drama is the most popular genre with a genre count of 25606 followed by comedy with a count of 16870 as we initially suspected, We also see that Thriller and Romance follow suit. IMAX is by far the least popular genres with a count of 195 with Film-Noir following with a count of 353.\n\n\n\nWe have now seen the the most popular and least popular genres, lets now dig a little deeper into the genres and find out if whether the genre preference has changed throughout the years, to investigate this let's created an animated bar plot.")
+                st.image('resources/imgs/Mean Rating Per Genre.png',use_column_width=True)
+                #st.write("The genre bar chart shows that Drama is the most popular genre with a genre count of 25606 followed by comedy with a count of 16870 as we initially suspected, We also see that Thriller and Romance follow suit. IMAX is by far the least popular genres with a count of 195 with Film-Noir following with a count of 353.\n\n\n\nWe have now seen the the most popular and least popular genres, lets now dig a little deeper into the genres and find out if whether the genre preference has changed throughout the years, to investigate this let's created an animated bar plot.")
+                gendec = '''
+                #### Observations
+<img height = "210" width = 400 src="https://imgix.bustle.com/fatherly/2019/06/best-nature-documentaries.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg" align="center" alt="Photo of Clive Barker" class="GeneratedImage"></br>
+
+- Documentries seams to be the most higly rated releases in the data
+
+- The ratings are almost evenly distributed, with the exception of documentaries, conflict, drama, musicals, and romance, which score over average. On the other side, the ratings for thriller, action, science fiction, and horror are noticeably below average.
+
+- Hollywood crime dramas are referred to as "film-noir," especially those that stress cynical attitudes and sexual desires. In general, the "classic era" of American film-noir is thought to have been the 1940s and 1950s. Though it's possible that their particular audience is why some films earn the greatest ratings. For IMAX movies, the same reasoning holds true; hence, we only accounted for categories with a count of 500 or more in this graph.
+
+---
+We have now seen the the most popular and least popular genres, lets now dig a little deeper into the genres and find out if whether the genre preference has changed throughout the years, to investigate this let's created an animated bar plot.
+
+---
+'''
+                st.markdown(gendec, unsafe_allow_html=True)
             if op_genre == "Genre average rating over the years":
             #if genre_options == "Genre average rating over the years":
                 st.video('resources/imgs/download.mp4')
                 st.write("Right off the bat of the bet, the bar charr race shows us that there has been a change in genre preferences over the years")
                 st.write("Stangely Animation was the best rated genre in 1995.\n\n\n\nIn 1996 Animation dropped to the 8th position and the Documentary became the most rated genre\n\n\n\n1997 Animation toped the char again and the following year Documentaty took over, seems between those 4 years the most prefered genres where Animation and Documentary, Strange times indeed...\n\n\n\nIn 1999 Crime movies started being popular and became the highest rated genre that year\n\n\n\nDrame took over the top spot in the year 2000\n\n\n\n2001 We see Fantasy, Crime and Drama taking the 1st. 2nd and 3rd spots respectively and we see these genres taking turns over the next couple of years until 2013 when Romance takes the lead and Documentaries become more popular and toping the chart in 2015.")
-            if op_genre == "Word cloud of movie genres":
-            #if genre_options == "Word cloud of movie genres":
-                st.image('resources/imgs/Wordcloud_G3.png',use_column_width=True)
+            
 
         if choose == "Title Cast":
+            op_genre = st.radio("Choose an option under Title Cast",("Top 3 Movie Actors with Highest Number of movies released","Top 3 Movie Actors with Highest Number of movies Rated(20+ movies released)"))
+            
            
-        #if option_selection == "Title Cast":
-            st.image('resources/imgs/Number of Movies Per Actor For Top 10 Actors.png',use_column_width=True)
-            act = '''### Top 3 Movie Actors with Highest Number of movies released
+            if op_genre == "Top 3 Movie Actors with Highest Number of movies released":
+                st.image('resources/imgs/Number of Movies Per Actor For Top 10 Actors.png',use_column_width=True)
+                act = '''### Top 3 Movie Actors with Highest Number of movies released
 
 <img height = "238" width = 178 src="https://cdn.britannica.com/77/191077-050-63262B99/Samuel-L-Jackson.jpg" alt="Photo of Tom Hanks" class="GeneratedImage">
 <img height = "238" width = 950 src="https://i.ibb.co/x3452bJ/sam.jpg" alt="Movies of Tom Hanks" class="GeneratedImage"></br>
@@ -391,43 +430,48 @@ After seeing the total number of ratings each filmmaker has received, it is only
 </br>
 </br>
 '''
-            st.write("The likes of Samuel L. Jackson ,steve Buscemi ans Keith David are the most popular cast members according to the graph above.")
-            st.markdown(act, unsafe_allow_html=True)
+                st.write("The likes of Samuel L. Jackson ,steve Buscemi ans Keith David are the most popular cast members according to the graph above.")
+                st.markdown(act, unsafe_allow_html=True)
 
-    #About
-    if page_selection == "About":
-        title_about = """
-	    <div style="background-color:#eebd8a;padding:10px;border-radius:10px;margin:10px;">
-	    <h1 style="color:black;text-align:center;"> - The Team -</h1>
-        <h3 style="color:black;text-align:right;">We are a team of data science students from Explore Data Science Academy. This is our project for unsupervised sprint.</h3>
-        """
-        mission = """
-	    <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
-	    <h1 style="color:black;text-align:center;"> - Our Mission - </h1>
-        <h3 style="color:black;text-align:center;">To keep you entertained by helping you find movies you're most likely to enjoy&#128515</h3>
-        """
+            if op_genre == "Top 3 Movie Actors with Highest Number of movies Rated(20+ movies released":
+                st.image('resources/imgs/Mean Rating Per Actor (20+ movies released).png',use_column_width=True)
+                st.write("The likes of Samuel L. Jackson ,steve Buscemi ans Keith David are the most popular cast members according to the graph above.")
+                st.markdown(act, unsafe_allow_html=True)
 
-        contributors = """
-        <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
-	    <h1 style="color:black;text-align:center;"> - Contributors -</h1>
-        """
-        
-        
-        st.markdown(title_about, unsafe_allow_html=True)
-        st.markdown(mission, unsafe_allow_html=True)
-        st.markdown(contributors, unsafe_allow_html=True)
-        st.image('resources/imgs/team members.png',use_column_width=True)
+        #About
+        if page_selection == "About":
+            title_about = """
+            <div style="background-color:#eebd8a;padding:10px;border-radius:10px;margin:10px;">
+            <h1 style="color:black;text-align:center;"> - The Team -</h1>
+            <h3 style="color:black;text-align:right;">We are a team of data science students from Explore Data Science Academy. This is our project for unsupervised sprint.</h3>
+            """
+            mission = """
+            <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
+            <h1 style="color:black;text-align:center;"> - Our Mission - </h1>
+            <h3 style="color:black;text-align:center;">To keep you entertained by helping you find movies you're most likely to enjoy&#128515</h3>
+            """
 
-    if page_selection == "Business Pitch":
-        st.image('resources/imgs/BV_1.jpg',use_column_width=True)
-        st.write("Some of the biggest companies in the world invested in streaming entertainment in the 21st century. The investment in streaming entertainment gave us platforms such as Netflix, Apple TV,, Disney Plus, Amazon prime and many more. These platforms are racking up millions of subscribers as the entire world is now streaming more than ever.")
-        st.write("You may be wondering why these streaming platforms are attracting millions of subscribers, there are several reasons why people are leaning more towards streaming platforms. Streaming platforms have a lot of diverse content that can be consumed anywhere, anytime, and the subscribers are in total control of the rate at which they consume the content.")
-        st.image('resources/imgs/BV_2.jpg',use_column_width=True)
-        st.write("Another thing that is a major contributor in the rise and success of streaming platforms is their ability to recommend content that their users are most likely to watch and enjoy. They achieve this through the use of recommender algorithms. These algorithms ensure that each user is exposed to what they like.")
-        st.image('resources/imgs/increasing.jpg',use_column_width=True)
-        st.write("When doing exploratory data analysis we saw that the number of movies released increases exponentially each year. The exponential increase in the number of movies released means that streaming platforms need an excellent recommender algorithm to ensure that the movies reach the right audience.")
-        st.image('resources/imgs/BV_L.jpg',use_column_width=True)
-        st.write("This is where our recommender algorithm comes in. Our recommender algorithm will help with user retention by making tailored recommendations for each user. The user retention will ultimately result in a growth of the platform.")
+            contributors = """
+            <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
+            <h1 style="color:black;text-align:center;"> - Contributors -</h1>
+            """
+            
+            
+            st.markdown(title_about, unsafe_allow_html=True)
+            st.markdown(mission, unsafe_allow_html=True)
+            st.markdown(contributors, unsafe_allow_html=True)
+            st.image('resources/imgs/team members.png',use_column_width=True)
+
+        if page_selection == "Business Pitch":
+            st.image('resources/imgs/BV_1.jpg',use_column_width=True)
+            st.write("Some of the biggest companies in the world invested in streaming entertainment in the 21st century. The investment in streaming entertainment gave us platforms such as Netflix, Apple TV,, Disney Plus, Amazon prime and many more. These platforms are racking up millions of subscribers as the entire world is now streaming more than ever.")
+            st.write("You may be wondering why these streaming platforms are attracting millions of subscribers, there are several reasons why people are leaning more towards streaming platforms. Streaming platforms have a lot of diverse content that can be consumed anywhere, anytime, and the subscribers are in total control of the rate at which they consume the content.")
+            st.image('resources/imgs/BV_2.jpg',use_column_width=True)
+            st.write("Another thing that is a major contributor in the rise and success of streaming platforms is their ability to recommend content that their users are most likely to watch and enjoy. They achieve this through the use of recommender algorithms. These algorithms ensure that each user is exposed to what they like.")
+            st.image('resources/imgs/increasing.jpg',use_column_width=True)
+            st.write("When doing exploratory data analysis we saw that the number of movies released increases exponentially each year. The exponential increase in the number of movies released means that streaming platforms need an excellent recommender algorithm to ensure that the movies reach the right audience.")
+            st.image('resources/imgs/BV_L.jpg',use_column_width=True)
+            st.write("This is where our recommender algorithm comes in. Our recommender algorithm will help with user retention by making tailored recommendations for each user. The user retention will ultimately result in a growth of the platform.")
 
 
 
