@@ -97,7 +97,7 @@ def main():
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
     st.sidebar.title("Pages")
-    page_options = ["Home","Exploratory Data Analysis(EDA)","Recommender System","Solution Overview","Business Pitch","About"]
+    page_options = ["Home","Recommender System","Solution Overview","Exploratory Data Analysis(EDA)","Business Pitch","About"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -161,17 +161,11 @@ def main():
         st.markdown(title_SO, unsafe_allow_html=True)
         #st.title("Solution Overview")
         st.image('resources/imgs/Sol.jpeg',use_column_width=True)
-        st.write("Describe your winning approach on this page")
-        st.write("Our objective was to construct a recommendation algorithm based on the content or collaborative filtering, capable of accurately predicting how a user will rate a movie they have not yet viewed based on their historical preferences. We used a special version of the MovieLens dataset. Below is a description of the dataset we used")
-        st.write("genome_scores - a score mapping the strength between movies and tag-related properties")
-        st.write("genome_tags - user assigned tags for genome-related scores")
-        st.write("imdb_data - Additional movie metadata scraped from IMDB using the links.csv file")
-        st.write("links - File providing a mapping between a MovieLens ID and associated IMDB and TMDB IDs")
-        st.write("tags - User assigned for the movies within the dataset")
-        st.write("test - The test split of the dataset. Contains user and movie IDs with no rating data")
-        st.write("train - The training split of the dataset. Contains user and movie IDs with associated rating data")
-        st.write("The initial step was the data preprocessing and we looked for missing values. We discovered that there are missing values in three of the eight datasets we have.")
-        st.write("After data preprocessing we started building our based model. We built five different collaborative base models, namely SVD, Normal Predictor, CoClustering, KNN Baseline, and lastly NMF. Their performances were compared using a statistical measure known as the root mean square error (RMSE), which determines the average squared difference between the estimated values and the actual value. A low RMSE value indicates a high model accuracy. The best performing base models were SVD and KNN Baseline.\n\nWe performed hyperparameter tuning on SVD and it gave us the best result of Kaggle.")
+        solu = '''Our goal was to develop a collaborative filtering or content-based recommendation system that can reliably anticipate how a user will evaluate a film they haven't yet seen based on their past preferences. We made advantage of a unique MovieLens dataset. The dataset we utilized is described in <a href="https://markuphero.com/share/7Uz8F3mlG4lO1eUehLe2"> this link.</a>
+        '''
+        st.markdown(solu, unsafe_allow_html=True)
+        st.write("Data preparation was the first phase, during which we searched for missing values. In three of the eight datasets we have, we  found missing values.")
+        st.write("Following data preparation, we began constructing our based model. Five distinct collaborative base models were created by our team: SVD, SVDpp, Normal Predictor, CoClustering, KNN Baseline, and NMF. A statistical metric known as the root mean square error (RMSE), which calculates the average squared difference between the estimated values and the actual value, was used to compare their performances. An accurate model is one with a low RMSE value. SVD and KNN Baseline base models had the best performance. The SVD model underwent hyperparameter adjustment, and the outcome was the best on Kaggle.")
 
         imdb = """
 	    <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
@@ -338,7 +332,6 @@ After seeing the total number of ratings each filmmaker has received, it is only
 
 
 ---
-
                 '''
                 st.markdown(direct, unsafe_allow_html=True)
                 st.image('resources/imgs/Number of Movies Per director.png',use_column_width=True)
@@ -433,45 +426,72 @@ We have now seen the the most popular and least popular genres, lets now dig a l
                 st.write("The likes of Samuel L. Jackson ,steve Buscemi ans Keith David are the most popular cast members according to the graph above.")
                 st.markdown(act, unsafe_allow_html=True)
 
-            if op_genre == "Top 3 Movie Actors with Highest Number of movies Rated(20+ movies released":
+            if op_genre == "Top 3 Movie Actors with Highest Number of movies Rated(20+ movies released)":
                 st.image('resources/imgs/Mean Rating Per Actor (20+ movies released).png',use_column_width=True)
-                st.write("The likes of Samuel L. Jackson ,steve Buscemi ans Keith David are the most popular cast members according to the graph above.")
-                st.markdown(act, unsafe_allow_html=True)
+                #st.write("The likes of Samuel L. Jackson ,steve Buscemi ans Keith David are the most popular cast members according to the graph above.")
+                actr = '''
+                ### Top 3 Movie Actors with High ratings (20+ movies released)
 
-        #About
-        if page_selection == "About":
-            title_about = """
-            <div style="background-color:#eebd8a;padding:10px;border-radius:10px;margin:10px;">
-            <h1 style="color:black;text-align:center;"> - The Team -</h1>
-            <h3 style="color:black;text-align:right;">We are a team of data science students from Explore Data Science Academy. This is our project for unsupervised sprint.</h3>
-            """
-            mission = """
-            <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
-            <h1 style="color:black;text-align:center;"> - Our Mission - </h1>
-            <h3 style="color:black;text-align:center;">To keep you entertained by helping you find movies you're most likely to enjoy&#128515</h3>
-            """
+<img height = "238" width = 178 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-bt7_ZKFMU8UOOjlq-GYF5P0iNJVuqz9HuDI3GkLmLXDfifpy" alt="Photo of Tom Hanks" class="GeneratedImage">
+<img height = "238" width = 950 src="https://i.ibb.co/fVWjWRQ/2tom-h.jpg" alt="Movies of Tom Hanks" class="GeneratedImage"></br>
+<a href="https://en.wikipedia.org/wiki/Tom_Hanks">Tom Hanks</a> is an American actor and filmmaker. Known for both his comedic and dramatic roles, he is one of the most popular and recognizable film stars worldwide, and is regarded as an American cultural icon. </a>
+</br>
+</br>
+<img height = "238" width = 178 src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTWkkwUYKcdK296LMj5-aAkieIrvt7pqfHc4N16BIvL9EHFSpuf" alt="Photo of Edward Norton" class="GeneratedImage">
+<img height = "238" width = 950 src="https://i.ibb.co/cbYn0CN/tempsnip.jpg" alt="Movies of Edward Norton" class="GeneratedImage"></br>
+<a href="https://en.wikipedia.org/wiki/Edward_Norton">Edward Norton</a> is an American actor and filmmaker. He has received numerous awards and nominations, including a Golden Globe Award and three Academy Award nominations. Born in Boston, Massachusetts and raised in Columbia, Maryland, Norton was drawn to theatrical productions at local venues as a child. </a>
+</br>
+</br>
 
-            contributors = """
-            <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
-            <h1 style="color:black;text-align:center;"> - Contributors -</h1>
-            """
-            
-            
-            st.markdown(title_about, unsafe_allow_html=True)
-            st.markdown(mission, unsafe_allow_html=True)
-            st.markdown(contributors, unsafe_allow_html=True)
-            st.image('resources/imgs/team members.png',use_column_width=True)
+<img height = "238" width = 178 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2q9tvih6sHPAEEbPoCRrWpf2IWVG5IOo5jIxqCA7dgrggsQO5" alt="Photo of Leonardo DiCaprio" class="GeneratedImage">
+<img height = "238" width = 950 src="https://i.ibb.co/0YGYhPd/leo.jpg" alt="Movies of Leonardo DiCaprio" class="GeneratedImage"></br>
+<a href="https://en.wikipedia.org/wiki/Leonardo_DiCaprio">Leonardo DiCaprio</a> is an American actor and film producer. Known for his work as a leading man in biopics and period films, he is the recipient of numerous accolades, including an Academy Award, a British Academy Film Award, and three Golden Globe Awards.  </a>
+</br>
+</br>
 
-        if page_selection == "Business Pitch":
-            st.image('resources/imgs/BV_1.jpg',use_column_width=True)
-            st.write("Some of the biggest companies in the world invested in streaming entertainment in the 21st century. The investment in streaming entertainment gave us platforms such as Netflix, Apple TV,, Disney Plus, Amazon prime and many more. These platforms are racking up millions of subscribers as the entire world is now streaming more than ever.")
-            st.write("You may be wondering why these streaming platforms are attracting millions of subscribers, there are several reasons why people are leaning more towards streaming platforms. Streaming platforms have a lot of diverse content that can be consumed anywhere, anytime, and the subscribers are in total control of the rate at which they consume the content.")
-            st.image('resources/imgs/BV_2.jpg',use_column_width=True)
-            st.write("Another thing that is a major contributor in the rise and success of streaming platforms is their ability to recommend content that their users are most likely to watch and enjoy. They achieve this through the use of recommender algorithms. These algorithms ensure that each user is exposed to what they like.")
-            st.image('resources/imgs/increasing.jpg',use_column_width=True)
-            st.write("When doing exploratory data analysis we saw that the number of movies released increases exponentially each year. The exponential increase in the number of movies released means that streaming platforms need an excellent recommender algorithm to ensure that the movies reach the right audience.")
-            st.image('resources/imgs/BV_L.jpg',use_column_width=True)
-            st.write("This is where our recommender algorithm comes in. Our recommender algorithm will help with user retention by making tailored recommendations for each user. The user retention will ultimately result in a growth of the platform.")
+### Key observatios
+* As we can see from the list above, practically every actor is easily identifiable. Naturally, Tom Hanks and Leonardo DiCaprio are at the top of the list.
+
+* The average mean rating of 3.6 for the top 3 actors further indicates how highly moviegoers regard their favorite actors.
+---
+
+'''
+                st.markdown(actr, unsafe_allow_html=True)
+
+    #About
+    if page_selection == "About":
+        title_about = """
+        <div style="background-color:#eebd8a;padding:10px;border-radius:10px;margin:10px;">
+        <h1 style="color:black;text-align:center;"> - The Team -</h1>
+        <h3 style="color:black;text-align:right;">We are a team of data science students from Explore Data Science Academy. This is our project for unsupervised sprint.</h3>
+        """
+        mission = """
+        <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
+        <h1 style="color:black;text-align:center;"> - Our Mission - </h1>
+        <h3 style="color:black;text-align:center;">To keep you engaged by assisting you in selecting movies that you're likely to like&#128515</h3>
+        """
+
+        contributors = """
+        <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
+        <h1 style="color:black;text-align:center;"> - Contributors -</h1>
+        """
+        
+        
+        st.image('resources/imgs/logosidebar-removebg-preview.png',use_column_width=True)
+        st.markdown(mission, unsafe_allow_html=True)
+        st.markdown(contributors, unsafe_allow_html=True)
+        st.image('resources/imgs/MISSION STATEMENT (6).png',use_column_width=True)
+
+    if page_selection == "Business Pitch":
+        st.image('resources/imgs/BV_1.jpg',use_column_width=True)
+        st.write("In this twenty-first century, some of the greatest corporations in the world made investments in streaming entertainment. We now have platforms like Netflix, Apple TV, Disney Plus, Amazon Prime, and many more thanks to the investment in streaming entertainment. Millions of people are subscribing to these sites as the world streams more content than ever before.")
+        st.write("There are a number of reasons why people are turning more and more to streaming platforms, which may have you wondering why these services are drawing millions of members. The users have complete control over the pace at which they consume the information on streaming platforms, which provide a wide variety of content that can be accessed anytime, anywhere.")
+        st.image('resources/imgs/BV_2-removebg-preview.png',use_column_width=True)
+        st.write("Their capacity to suggest material that their customers are most likely to view and appreciate is another factor that significantly contributes to the growth and success of streaming platforms. They accomplish this by utilizing recommender algorithms. Each person is exposed to content they are interested in thanks to these algorithms. ")
+        st.image('resources/imgs/increasing.jpg',use_column_width=True)
+        st.write("We discovered through exploratory data analysis that the annual rise in movie releases is exponential. Due to the exponential rise in the number of movies being published, streaming companies require a superior recommender algorithm to guarantee that the films get seen by the intended audience.")
+        st.image('resources/imgs/BV_L.jpg',use_column_width=True)
+        st.write("Our recommender system comes into play in this situation. By providing each user-specific recommendations, our recommender algorithm will aid in retaining users. The platform will eventually expand as long as users stay on it.Another benefit is that any shopping site may utilize the same principles as our recommender system to provide consumers with recommendations for other products based on their previous purchases.")
 
 
 

@@ -45,7 +45,7 @@ ratings_df.drop(['timestamp'], axis=1,inplace=True)
 #movies_df = movies_df[movies_df['movieId'].isin(ratings_df['movieId'])]
 
 # We make use of an SVD model trained on a subset of the MovieLens 10k dataset.
-model=pickle.load(open('resources/models/SVD_Team3.pkl', 'rb'))
+model=pickle.load(open('resources/models/SVD_TeamJM4.pkl', 'rb'))
 df_merged = pd.read_csv('resources/data/df_merged.csv')
 
 
