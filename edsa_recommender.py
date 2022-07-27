@@ -468,7 +468,7 @@ We have now seen the the most popular and least popular genres, lets now dig a l
         mission = """
         <div style="background-color:#464e5f00;padding:10px;border-radius:10px;margin:10px;">
         <h1 style="color:black;text-align:center;"> - Our Mission - </h1>
-        <h3 style="color:black;text-align:center;">To keep you engaged by assisting you in selecting movies that you're likely to like&#128515</h3>
+        <h3 style="color:black;text-align:center;">To empower our clients to better manage their data using automated applications &#128515</h3>
         """
 
         contributors = """
