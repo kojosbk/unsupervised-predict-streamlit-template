@@ -87,7 +87,7 @@ def set_bg_hack(main_bg):
 
 # set_png_as_page_bg('resources/imgs/newbg.png')
 set_bg_hack('resources/imgs/MISSION STATEMENT (4).png')
-logo = Image.open('resources\imgs\logosidebar-removebg-preview.png')
+logo = Image.open('resources/imgs/logosidebar-removebg-preview.png')
 st.sidebar.image(logo, use_column_width=True)
 # Data Loading
 title_list = load_movie_titles('resources/data/movies.csv')
