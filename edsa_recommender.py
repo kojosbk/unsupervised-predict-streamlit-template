@@ -97,7 +97,7 @@ def main():
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
     st.sidebar.title("Pages")
-    page_options = ["Home","Recommender System","Solution Overview","Exploratory Data Analysis(EDA)","Business Pitch","About"]
+    page_options = ["Recommender System","Home","Solution Overview","Exploratory Data Analysis(EDA)","Business Pitch","About"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
